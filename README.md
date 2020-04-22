@@ -15,5 +15,15 @@ One word "Tunnel". Setup a local tunnel on the server from IPV6 [End point 1] ne
 
 ### How to enable debugger for IPv6
 #### Prepare server machine.
+  This exposes port 18787 externally on IPv6 stack and forward all traffic to port 8787 on IPv4 stack on the same machine.
+```
+call "tinymapper_windows\for winxp and below\tinymapper.exe" -l [::]:18787 -r 127.0.0.1:8787 -t -u
+```
 #### Prepare machine with source code machine
+   This exposes port 8787 externally on IPv4 stack and forward all traffic to port 18787 on IPv6 stack on server machine.
+```
+call "tinymapper_windows\for winxp and below\tinymapper.exe" -l 0.0.0.0:8787 -r [2001:df0:23:1120::309]:18787 -t -u
+```
+#### Connect debugger on the machine with source code machine
+Connect java debugger on socket 127.0.0.1:8787
 
