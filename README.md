@@ -9,7 +9,10 @@ The current implementation on the target VM side only supports IPv4, but this co
 One word "Tunnel". Setup a local tunnel on the server from IPV6 [End point 1] network to IPv4 [End point 2] network. Setup a local tunnel on the machine which is used for debugging from IPv4 [End point 3] network to IPv6 [End point 4] network. Configure tunnels such that "End point 1" and "End point 4" can connect over IPv6 network. 
 
 ### Assumption
-You have a remote debug enabled IPv6 server with debug port as 8787
-You have tinyPortMapper/tinyPortForwarder downloaded from https://github.com/wangyu-/tinyPortMapper/releases
+* You have a remote debug enabled IPv6 server with debug port as 8787
+* You have tinyPortMapper/tinyPortForwarder downloaded from https://github.com/wangyu-/tinyPortMapper/releases
 
 ### How to enable debugger for IPv6
+## Prepare server machine.
+## Prepare machine with source code machine
+
