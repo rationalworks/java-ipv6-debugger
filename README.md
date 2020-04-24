@@ -1,6 +1,7 @@
 # Setup remote debugger for java on pure IPv6 Network
 
 ## Why is this an issue?
+Remote debugging java application deployed on an pure IPv6 network is not possible as Java does not supports remote debugging on IPv6 network. This document outlines a solution to this limitation.
 Refer: https://docs.oracle.com/javase/8/docs/technotes/guides/jpda/conninv.html
 ```
 The current implementation on the target VM side only supports IPv4, but this could 
