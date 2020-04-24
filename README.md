@@ -19,11 +19,11 @@ One word "Tunnel". Setup a local tunnel on the server from IPV6 [End point 1] ne
 ```
 call "tinymapper_windows\for winxp and below\tinymapper.exe" -l [::]:18787 -r 127.0.0.1:8787 -t -u
 ```
-#### Prepare machine with source code machine
+#### Prepare machine with source code
    This exposes port 8787 externally on IPv4 stack and forward all traffic to port 18787 on IPv6 stack on server machine.
 ```
 call "tinymapper_windows\for winxp and below\tinymapper.exe" -l 0.0.0.0:8787 -r [2001:db8:85a3:8d3:1319:8a2e:370:7348]:18787 -t -u
 ```
-#### Connect debugger on the machine with source code machine
+#### Connect debugger on the machine with source code to the server
 Connect java debugger on socket 127.0.0.1:8787
 
